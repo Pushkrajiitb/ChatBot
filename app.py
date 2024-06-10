@@ -1,5 +1,4 @@
 import os
-from langchain import PromptTemplate, LLMChain
 from langchain_community.llms.huggingface_endpoint import HuggingFaceEndpoint
 import streamlit as st
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
