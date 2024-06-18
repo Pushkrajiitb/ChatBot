@@ -5,14 +5,14 @@ from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.messages import HumanMessage
 from streamlit_chat import message
 
-os.environ["HUGGINGFACEHUB_API_TOKEN"] = "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"
+os.environ["HUGGINGFACEHUB_API_TOKEN"] = "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"
 
 st.title('Campus Connect V1')
 
 # Clear chat button
 if st.button("Clear Chat"):
     st.session_state.chat_history = []
-repo_id = "mistralai/Mistral-7B-Instruct-v0.2"  
+repo_id = "mistralai/Mistral-7B-Instruct-v0.3"  
 #repo_id="facebook/blenderbot-400M-distill"
 model = HuggingFaceEndpoint(  
     repo_id=repo_id,  
